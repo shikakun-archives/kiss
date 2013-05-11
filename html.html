@@ -27,81 +27,12 @@
           
           <!-- BEGIN entry -->
             <article class="entry">
-              <h2 class="title">
-                {entry_title_link}
-              </h2>
               <div class="description">
                 {entry_description}
-                <a name="sequel"></a>
                 {entry_sequel}
               </div>
-              <div class="metadata">
-                {entry_date}
-                {entry_time}
-                {comment_num}
-                {trackback_num}
-                {category_name}
-                {user_name}
-                {logpi_link}
-                {love}
-              </div>
-              {trackback_auto_discovery}
             </article>
           <!-- END entry -->
-          
-          <!-- BEGIN comment_area -->
-            <section id="comments">
-              <h3 class="title">
-                Comment
-              </h3>
-              
-              <!-- BEGIN comment -->
-                <div class="comment">
-                  {comment_description}
-                  {comment_name}
-                  {comment_time}
-                </div>
-              <!-- END comment -->
-              
-              <form class="form" name="comment_area" action="./?mode=comment" method="post">
-                <input name="name" type="text" value="{cookie_name}" tabindex="1">
-                <input name="email" type="text" value="{cookie_email}" tabindex="2">
-                <input name="url" type="text" value="{cookie_url}" tabindex="3">
-                <textarea name="description" rows="5" tabindex="4"></textarea>
-                <input type="submit" value="コメント送信" tabindex="5" onclick="javascript:setval();">
-                <input id="set_cookie" name="set_cookie" type="checkbox" value="1"><label for="set_cookie">Save</label>
-                <input name="entry_id" type="hidden" value="{entry_id}">
-              </form>
-            </section>
-          <!-- END comment_area -->
-          
-          <!-- BEGIN trackback_area -->
-            <section id="trackbacks">
-              <h3 class="title">
-                Trackback
-              </h3>
-              
-              <!-- BEGIN trackback -->
-                <section class="trackback">
-                  <h4 class="title">
-                    {trackback_title}
-                  </h4>
-                  <div class="excerpt">
-                    {trackback_excerpt}
-                  </div>
-                  <div class="metadata">
-                    <p class="blog-name">{trackback_blog_name}</p>
-                    <time class="time">{trackback_time}</time>
-                  </div>
-                </section>
-              <!-- END trackback -->
-              
-              <h4 class="title">
-                Trackback URL
-              </h4>
-              <input type="text" value="{trackback_url}">
-            </section>
-          <!-- END trackback_area -->
           
           <!-- BEGIN profile_area -->
             <section class="entry">
