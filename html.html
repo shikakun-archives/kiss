@@ -3,63 +3,54 @@
   <head>
     <title>{site_title}</title>
     <meta charset="{site_encoding}">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description" content="kiss.nakaotakashi.com">
+    <meta name="keywords" content="kiss nakaotakashi com">
+    <meta name="author" content="nakaotakashi.com">
     <meta property="og:title" content="{site_title}">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="">
+    <meta property="og:description" content="kiss.nakaotakashi.com">
+    <meta property="og:url" content="http://kiss.nakaotakashi.com/">
     <meta property="og:image" content="">
     <meta property="og:site_name" content="{site_title}">
     <link rel="stylesheet" type="text/css" media="screen, print" href="{site_css}">
-    <link rel="stylesheet" type="text/css" media="screen, print" href="{gmo_header_css}">
     <link rel="alternate" type="application/rss+xml" title="{site_title} RSS" href="{site_rss}">
     <link rel="alternate" type="application/atom+xml" title="{site_title} Atom" href="{site_atom}">
-    <link rel="alternate" type="application/xhtml+xml" media="handheld" href="{mobile_url}">
-    <script type="text/javascript" src="http://imaging.jugem.jp/template/js/cookie.js"></script>
   </head>
-  <body id="{eid}{page}{cid}{month}{day}{search}{pid}{index}" onload="javascript:initval();">
+  <body id="{eid}{page}{cid}{month}{day}{search}{pid}{index}">
     <div id="contents" class="wrapper">
-      <div class="inner clearfix">
-        <div id="entries" class="main">
+      <div id="entries" class="inner">
+        
+        <!-- BEGIN entry -->
+          <article class="entry">
+            {entry_description}
+            {entry_sequel}
+          </article>
+        <!-- END entry -->
           
-          
-          
-          <!-- BEGIN entry -->
-            <article class="entry">
-              <div class="description">
-                {entry_description}
-                {entry_sequel}
-              </div>
-            </article>
-          <!-- END entry -->
-          
-          <!-- BEGIN profile_area -->
-            <section class="entry">
-              <h2 class="title">
-                {profile_name}ja
-              </h2>
-              <div class="description">
-                {profile_description}
-              </div>
-            </section>
-          <!-- END profile_area -->
-          
-          <!-- BEGIN page -->
-            <ul class="page">
-              <li>
-                {prev_page_link}
-              </li>
-              <li>
-                {page_now}/{page_num}
-              </li>
-              <li>
-                {next_page_link}
-              </li>
-            </ul>
-          <!-- END page -->
-          
-        </div>
+        <!-- BEGIN profile_area -->
+          <article class="entry">
+            <h2 class="title">
+              {profile_name}
+            </h2>
+            <div class="description">
+              {profile_description}
+            </div>
+          </article>
+        <!-- END profile_area -->
+        
+        <!-- BEGIN page -->
+          <ul class="page">
+            <li>
+              {prev_page_link}
+            </li>
+            <li>
+              {page_now}/{page_num}
+            </li>
+            <li>
+              {next_page_link}
+            </li>
+          </ul>
+        <!-- END page -->
+        
       </div>
     </div>
     <!-- BEGIN title --><!-- END title --><!-- BEGIN jugem_ad -->{ad}<!-- END jugem_ad -->
