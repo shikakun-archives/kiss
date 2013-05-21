@@ -72,17 +72,17 @@ a {
   text-align: center;
 }
 
+#page_status {
+  margin: 0 0.25em;
+  display: none;
+}
+
 #page {
   padding-bottom: 120px;
   text-align: center;
-  color: #ccc;
 }
 
-.page_loading {
+#page_next {
   margin-right: 1em;
-  color: #ccc;
-}
-
-.page_status {
-  margin: 0 0.25em;
+  color: #9b9b9b;
 }

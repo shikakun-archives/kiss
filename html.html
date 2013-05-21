@@ -39,11 +39,16 @@
             </div>
           </article>
         <!-- END profile_area -->
+        
+        <!-- BEGIN page -->
+          <p id="page_status">(<span id="page_now">{page_now}</span>/<span id="page_num">{page_num}</span>pages)</p>
+        <!-- END page -->
+        
       </div>
       
       <!-- BEGIN page -->
         <nav id="page" class="inner">
-          <a id="page_next" class="page_loading" href="?page={page_now}">Loading...</a>(<span id="page_now" class="page_status">{page_now}</span>/<span id="page_num" class="page_status">{page_num}</span>pages)
+          <a id="page_next" href="?page={page_now}">Loading...</a>
         </nav>
       <!-- END page -->
       
