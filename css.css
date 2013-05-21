@@ -14,7 +14,7 @@ object,object:focus { outline: none; }
 .clearfix { zoom: 1; }
 .clearfix:after { content: ""; display: block; clear: both; }
 
-/* layout */
+/* layouts */
 .wrapper {
   width: 100%;
 }
@@ -27,8 +27,8 @@ object,object:focus { outline: none; }
 /* details */
 body {
   color: #9b9b9b;
-  font-size: 88%;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1;
   padding-top: 120px;
 }
 
@@ -38,39 +38,8 @@ a {
   outline: none;
 }
 
-.title a {
-  color: #2b2b2b;
-}
-
-.title {
-  font-size: 120%;
-  font-weight: normal;
-  margin-bottom: 0.5em;
-}
-
-#header {
-  padding: 90px 0;
-}
-
 .entry {
   margin-bottom: 120px;
-}
-
-.entry p {
-  margin-bottom: 0.5em;
-}
-
-.widget {
-  width: 180px;
-  margin-bottom: 30px;
-}
-
-#footer .main {
-  padding-top: 120px;
-}
-
-#footer .sub {
-  text-align: center;
 }
 
 #page_status {
