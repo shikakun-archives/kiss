@@ -1,8 +1,4 @@
-$(document).ready(function() {
-  //$(".pager.pager_next").find("a").addClass("autopager");
-  //var ap = $(".pager.pager_next").find("a").selector;
-  //alert(ap);
-  
+$(document).ready(function() {  
   $.autopager({
     content: '#entries',
     link: '#autopager'
