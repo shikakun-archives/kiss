@@ -40,9 +40,13 @@
           </article>
         <!-- END profile_area -->
       </div>
+      
       <!-- BEGIN page -->
-        <a id="autopager" href="?page={page_now}">Next</a>
+        <nav id="page" class="inner">
+          <a id="page_next" class="page_loading" href="?page={page_now}">Loading...</a>(<span id="page_now" class="page_status">{page_now}</span>/<span id="page_num" class="page_status">{page_num}</span>pages)
+        </nav>
       <!-- END page -->
+      
     </div>
     <!-- BEGIN title --><!-- END title --><!-- BEGIN jugem_ad -->{ad}<!-- END jugem_ad -->
   </body>

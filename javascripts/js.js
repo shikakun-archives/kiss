@@ -1,6 +1,6 @@
 $(document).ready(function() {  
   $.autopager({
     content: '#entries',
-    link: '#autopager'
+    link: '#page_next'
   });
 });
